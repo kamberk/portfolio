@@ -13,7 +13,7 @@ function Projects() {
             <div>
                 {data.map((project)=> {
                     return (
-                        <ProjectCard project={project} />
+                        <ProjectCard key={project.id.toString()} project={project} />
                     )
                 })}
             </div>

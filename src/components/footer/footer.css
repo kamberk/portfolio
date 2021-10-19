@@ -1,0 +1,35 @@
+.footer {
+    padding: 12px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    text-align: center;
+    width: 100%;
+    color: gray;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credits-right {
+    align-items: flex-end;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+}
+
+@media only screen and (max-width: 720px) {
+    .credits {
+        display: block;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+}

@@ -29,7 +29,8 @@
     }
 
     .picture {
-        height: 280px;
+        height: 100%;
+        width: 100%;
     }
 
     .about-info {
