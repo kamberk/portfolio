@@ -1,5 +1,7 @@
 import React from 'react'
+import ScrollToTop from "react-scroll-to-top";
 import Home from './components/home'
+import {ReactComponent as MySVG} from './assets/up.svg';
 
 class App extends React.Component {
   state = {
@@ -26,7 +28,10 @@ class App extends React.Component {
     }
 
     return (
+      <>
+      <ScrollToTop smooth component={<MySVG />} color='transparent' />
       <Home />
+      </>
     );
   }
 }
