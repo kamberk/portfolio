@@ -2,15 +2,18 @@ import React from 'react'
 import emailjs from 'emailjs-com';
 import './form.scss';
 
-export default function Form() {
+export default function Form({isLoading, setIsLoading}) {
 
     function sendEmail(e) {
+      setIsLoading=(!isLoading);
       e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
       emailjs.sendForm('service_7ceb0hs', 'template_mr1sac3', e.target, 'user_YMHhqOrre2gThea8XTfB2')
         .then((result) => {
             console.log(result)
+            setIsLoading=(!isLoading);
         }, (error) => {
             console.log(error)
+            setIsLoading=(!isLoading);
         });
     }
   

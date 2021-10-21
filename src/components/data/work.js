@@ -13,6 +13,6 @@ export const WorkData = [
         dateJoining:"02-02-2020",
         dateEnd:"07-15-2021",
         companyLogo:require('../../assets/ps.png'),
-        work:'Logo design andphoto manipulation using Adobe Photoshop cs6.'
+        work:'Logo design and photo manipulation using Adobe Photoshop cs6.'
     }
 ]

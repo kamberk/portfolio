@@ -38,4 +38,21 @@ export const SkillsData = [
             },
         ]
     },
+    {
+        type:"Databases",
+        list:[
+            {
+                name:"MongoDB",
+                icon:<i className="devicon-mongodb-plain colored"></i>,
+            },
+            {
+                name:"MtSQL",
+                icon:<i className="devicon-mysql-plain-wordmark colored"></i>
+            },
+            {
+                name:"Firebase",
+                icon:<i className="devicon-firebase-plain-wordmark colored"></i>
+            },
+        ]
+    }
 ];
