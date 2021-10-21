@@ -1,3 +1,4 @@
+import React from 'react';
 export const SkillsData = [
     {
         type:"Frontend",
@@ -37,4 +38,4 @@ export const SkillsData = [
             },
         ]
     },
-]
+];

@@ -2,6 +2,7 @@ import React from 'react'
 import './contact.css'
 import Separator from '../../common/separator/index'
 import SocialContact from '../../common/social-content/index'
+import Form from './form'
 function Contact() {
     return (
         <div className='contact'>
@@ -19,6 +20,7 @@ function Contact() {
                         </a>
                 </div>
             </div>
+            <Form />
         </div>
     )
 }
