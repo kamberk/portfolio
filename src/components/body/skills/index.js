@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './skills.css'
 import Separator from '../../common/separator/index'
 import { SkillsData } from '../../data/skills'
 import SkillCard from './skill-card';
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function Skills() {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
     const data = SkillsData;
     return (
-        <div className='skills'>
+        <div className='skills' data-aos="zoom-in-down">
             <Separator />     
             <label className='section-title'>My Skills</label>
             <div className='skills-container'>

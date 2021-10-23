@@ -26,7 +26,7 @@ function Contact() {
                     <SocialContact />
                 </div>
                 <div className='download'>
-                    <a download href={require('../../../assets/CV.pdf').default}>
+                    <a download href="https://github.com/kamberk/portfolio/raw/master/src/assets/CV.pdf">
                         <i className="fi fi-rr-cloud-download download-icon"></i>
                         Download Resume
                         </a>

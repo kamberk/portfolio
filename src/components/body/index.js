@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './body.css'
 import About from './about/index'
 import Projects from './projects/index'
@@ -6,14 +6,19 @@ import Skills from './skills/index'
 import Work from './work/index'
 import Contact from './contact/index'
 import AboutMe from './about-me'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function Body() {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
     return (
         <div className='body'>
-            <section id='about'>
+            <section data-aos="zoom-in-down" id='about'>
                 <About />
             </section>
-            <section id='about-me'>
+            <section data-aos="zoom-in-down" id='about-me'>
                 <AboutMe />
             </section>
             <section id='projects'>
@@ -25,7 +30,7 @@ function Body() {
             <section id='work'>
                 <Work />
             </section>
-            <section id='contact'>
+            <section data-aos="zoom-in-down" id='contact'>
                 <Contact />
             </section>
         </div>
